@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список студентов</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script type="module" src="./main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-light bg-gradient">
+
+  <section class="form mb-5">
+    <div class="container">
+      <h1 class="text-center mb-3">База данных студентов </h1>
+      <form class="row g-3" id="studentForm" action="#">
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label fw-bold">Имя</label>
+          <input type="text" class="form-control" placeholder="Введите имя" id="inputName" value="Иван">
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label fw-bold">Отчество</label>
+          <input type="text" class="form-control" placeholder="Введите отчество" id="inputLastname" value="Иванович">
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label fw-bold">Фамилия</label>
+          <input type="text" class="form-control" placeholder="Введите фамилию" id="inputSurname" value="Иванов">
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label fw-bold">Дата рождения</label>
+          <input type="date" class="form-control" id="inputBirthDate" value="2005-06-15">
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label fw-bold">Год начала обучения</label>
+          <input type="number" class="form-control" placeholder="Введите год начала обучения" id="inputStudyStart" value="2019">
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label fw-bold">Факультет</label>
+          <input type="text" class="form-control" placeholder="Введите факультет" id="inputFaculty" value="Поэзия">
+        </div>
+        <div class="d-flex justify-content-end display">
+          <span class="validation-error">
+          </span>
+        </div>
+        <div class="d-flex justify-content-end form-btn">
+          <button type="submit" class="btn btn-primary col-md-3 col-sm-6">Добавить студента</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" id="table">
+    </div>
+  </section>
+
+  <div class="container d-flex justify-content-end">
+    <button type="submit" class="btn-cancel btn btn-primary col-md-3 col-sm-6 d-none">Сбросить фильтры</button>
+  </div>
+
+  <!-- <div class="container d-flex justify-content-end">
+    <button type="submit" class="btn-save btn btn-primary col-md-3 col-sm-6" id="btn-save">Сохранить</button>
+  </div> -->
+
+</body>
+</html>
