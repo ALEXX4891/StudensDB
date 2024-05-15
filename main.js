@@ -121,7 +121,7 @@ async function getStudentsFromDB() {
   }
 }
 
-await getStudentsFromDB();
+await getStudentsFromDB(); // требуется подключить скрипт как модуль, иначе await не работает!!!
 
 let copyStudentsList = [...studentsList];
 let StudentsListForRender = [];
